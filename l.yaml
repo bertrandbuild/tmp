@@ -2129,3 +2129,12 @@ endpoints:
       summaryModel: "grok-beta"
       forcePrompt: false
       modelDisplayLabel: "Grok"
+mcpServers:
+  telegram-mcp:
+    type: streamable-http
+    url: https://telegram-mcp-production.up.railway.app
+    headers:
+      X-User-ID: "{{LIBRECHAT_USER_ID}}"
+      Authorization: "Bearer ${API_TOKEN}"
+    timeout: 30000
+    serverInstructions: true
