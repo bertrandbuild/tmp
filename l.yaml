@@ -2133,8 +2133,5 @@ mcpServers:
   telegram-mcp:
     type: streamable-http
     url: https://telegram-mcp-production.up.railway.app/mcp
-    headers:
-      X-User-ID: "{{LIBRECHAT_USER_ID}}"
-      Authorization: "Bearer ${API_TOKEN}"
     timeout: 30000
     serverInstructions: true
